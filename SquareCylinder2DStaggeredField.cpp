@@ -114,13 +114,11 @@ void SquareCylinder2DStaggeredField::UpdateBCFlatPlate()
 
 	for (int k = 1; k < cNZU - 1; k++)
 	{
-		{
-			const int i = cNXU - 1;
-			const int iu = cNXU - 2;
+		const int i = cNXU - 1;
+		const int iu = cNXU - 2;
 
-			cUnp(iu + 1, 0, k) = cUnp(iu, 0, k) +
-				cWnp(i, 0, k - 1) - cWnp(i, 0, k);
-		}
+		cUnp(iu + 1, 0, k) = cUnp(iu, 0, k) +
+			cWnp(i, 0, k - 1) - cWnp(i, 0, k);
 	}
 }
 

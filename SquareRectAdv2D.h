@@ -9,34 +9,23 @@
 
 void SquareRectAdv2D()
 {
-	constexpr double h = 0.0002;// *3.5 / 5.0;
+	constexpr double h = 0.0002; // passo no espaço
+	constexpr double l = 0.02;   // dimensão do cilindro
+	constexpr double L = 26.0*l; // dimensão horizontal do campo
+	constexpr double H = 15.0*l; // dimensão vertical do campo
+	constexpr int NX = int(L / h + 2); // num. pontos horizontal
+	constexpr int NZ = int(H / h + 2); // num. pontos vertical
+	constexpr int NN = int(NX * NZ);   // total de pontos
+	constexpr double ufree = 0.15; // vel. horizontal farfield
+	constexpr double wfree = 0.0;  // vel. vertical farfield
+	constexpr double dt = h / 2; // passo no tempo
+	constexpr double cfl = 4 * ufree * dt / h; // CFL < 0.3
+	constexpr double rho = 1.0; // massa especifica
+	constexpr double mu = 3.0e-5;// visc. dinamica
+	constexpr double tfinal = 15.0; // tempo final
+	constexpr int NT = int(tfinal / dt) + 1; // quantidade de passos no tempo
 
-	constexpr double l = 0.02;//10.0*h;// *5.0 / 3.5;
-
-	constexpr double L = 26.0*l;// 21.0*l;
-	constexpr double H = 15.0*l;
-
-	constexpr int NX = int(L / h + 2);
-	constexpr int NZ = int(H / h + 2);
-
-	constexpr int NN = int(NX * NZ);
-
-	constexpr double ufree = 0.15;
-	constexpr double vfree = 0.0;
-	constexpr double wfree = 0.0;
-
-	constexpr double dt = h / 2;// *5.0 / 3.5;
-
-	constexpr double cfl = 4 * ufree * dt / h;
-
-	constexpr double rho = 1.0;
-	constexpr double mu = 3.0e-5;// *0.98;// *(2.0 / 5.0);
-
-	constexpr double tfinal = 15.0;
-
-	constexpr int NT = int(tfinal / dt) + 1;
-
-	constexpr double CellRe = rho * h*ufree / mu;
+	constexpr double CellRe = rho * h*ufree / mu; 
 
 	constexpr double Re = rho * l*ufree / mu;
 
