@@ -1,0 +1,9 @@
+*.csv
+.vs/*
+debug/*
+*.dat
+x64/*
+outputRe100SUCSRK4/*
+Release/*
+*.exe
+2D/*

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\3D">
+      <UniqueIdentifier>{4f8e32c7-8ad4-4c01-8fbf-962f9dd16873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\3D">
+      <UniqueIdentifier>{212048d3-344c-45ea-9165-03c9f1f66f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\2D">
+      <UniqueIdentifier>{a09f293e-77bd-43c6-97cc-8c3de341bd3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\2D">
+      <UniqueIdentifier>{cbf62ff1-7da1-4e35-8a5e-14c17e0469d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Timer.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="FDColocated3DField.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Field3D.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Field3DIKJ.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Field3DJIK.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Field3DKJI.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="LidDriven.hpp">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="LSSolver.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="LSSolverF.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="preconditionerDummy2.hpp">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareCylinder3DStaggeredField.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareCylinder3DStaggeredFieldF.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareCylinder3DStaggeredFieldFFast.h">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRect.hpp">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRectAdv.hpp">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRectF.hpp">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRectFAdv.hpp">
+      <Filter>Arquivos de Cabeçalho\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRectAdv2D.h">
+      <Filter>Arquivos de Cabeçalho\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareCylinder2DStaggeredField.h">
+      <Filter>Arquivos de Cabeçalho\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRect2D.h">
+      <Filter>Arquivos de Cabeçalho\2D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FDColocated3DField.cpp">
+      <Filter>Arquivos de Origem\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Field3D.cpp">
+      <Filter>Arquivos de Origem\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="LSSolver.cpp">
+      <Filter>Arquivos de Origem\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="LSSolverF.cpp">
+      <Filter>Arquivos de Origem\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareCylinder3DStaggeredField.cpp">
+      <Filter>Arquivos de Origem\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareCylinder3DStaggeredFieldF.cpp">
+      <Filter>Arquivos de Origem\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareCylinder3DStaggeredFieldFFast.cpp">
+      <Filter>Arquivos de Origem\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Arquivos de Origem\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareCylinder2DStaggeredField.cpp">
+      <Filter>Arquivos de Origem\2D</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
